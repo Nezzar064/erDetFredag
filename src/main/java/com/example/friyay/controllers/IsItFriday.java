@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class IsItFriday {
     @ResponseBody
-    @GetMapping("isItFriday")
+    @GetMapping("/isItFriday")
     public String dayOfTheWeek(){
 
         DayOfWeek dayOfTheWeek = new DayOfWeek();
