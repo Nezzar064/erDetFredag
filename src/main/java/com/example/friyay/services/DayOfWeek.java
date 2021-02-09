@@ -11,13 +11,12 @@ public class DayOfWeek {
         //For testing
         java.time.DayOfWeek dayOfWeekFridayTest = java.time.DayOfWeek.FRIDAY;
 
-        String str = "<center><h1>Is it Friday?</h1></center><br>";
+        String topHeader = "<center><h1>Is it Friday?</h1></center><br>";
 
         if (dayOfWeek == java.time.DayOfWeek.FRIDAY) {
-            return str + friday();
+            return topHeader + friday();
         }
-        return str + "<center><h1>No, it is " + dayOfWeek + "</h1></center>";
-
+        return topHeader + "<center><h1>No, it is " + dayOfWeek + "</h1></center>";
     }
 
     private java.time.DayOfWeek getDayOfTheWeek() {
