@@ -16,7 +16,10 @@ public class DayOfWeek {
         if (dayOfWeek == java.time.DayOfWeek.FRIDAY) {
             return topHeader + friday();
         }
-        return topHeader + "<center><h1 style=\"background-color:FF99CC; \">No, it is " + dayOfWeek + "</h1></center>";
+        return topHeader + "<center><h1 style=\"background-color:FF99CC; \">No</h1></center>"
+                + "<center><h1 style=\"background-color:FF99CC; \">It</h1></center>"
+        + "<center><h1 style=\"background-color:FF99CC; \">Is</h1></center>"
+                + "<center><h1 style=\"background-color:FF99CC; \">" + dayOfWeek + "</h1></center>";
     }
 
     private java.time.DayOfWeek getDayOfTheWeek() {
